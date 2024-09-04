@@ -325,20 +325,18 @@ ul {
 }
 
 .icon-benefits {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    background: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
 }
 
-.icon-box {
-  
-}
+
 
 .firstelement {
   width: calc((100% - 72px) / 4);
@@ -372,6 +370,8 @@ ul {
 }
 
 .image {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #ffffff;
 }
 
@@ -425,6 +425,39 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.iconsocial {
+  width: 40px;
+  height: 40px;
+}
+
+.insta {
+  display: flex;
+width: 100%;
+height: 100%;
+background-color: #4d5ae5;
+border-radius: 50;
+align-items: center;
+justify-content: center;
+}
+
+.insta:hover {
+  background-color: #404bbf;
+}
+
+.insta:focus {
+  background-color: #404bbf;
+}
+
+.iconstyle {
+ fill: #f4f4fd; 
 }
 
 .portfolio {
