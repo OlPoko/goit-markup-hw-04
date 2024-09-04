@@ -187,7 +187,7 @@ ul {
 .studio {
   padding: 24px 0;
   font-family: "Roboto", sans-serif;
-  color: #404bbf;
+  color: #404abf;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
@@ -196,8 +196,10 @@ ul {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.studio::after {
+.studio:hover {
+  color: #404bbf;
+}
+.studio:after {
   content: "";
   width: 100%;
   position: absolute;
@@ -208,9 +210,7 @@ ul {
   border-radius: 2px;
 }
 
-.studio:hover {
-  color: #404bbf;
-}
+
 
 .studio:focus {
   color: #404bbf;
@@ -531,7 +531,7 @@ justify-content: center;
   overflow: hidden;
 }
 
-.appdescr {
+.overlay {
     position: absolute;
     top: 0;
     font-size: 16px;
@@ -546,7 +546,7 @@ justify-content: center;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.potf:hover {
+.portfimage:hover .overlay {
   transform: translateY(0%);
 }
 
