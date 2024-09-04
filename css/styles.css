@@ -524,9 +524,7 @@ justify-content: center;
   transform: translateY(0%);
 }
 
-.spec:hover {
- 
-}
+
 
 .appimage {
   position: relative;
@@ -548,11 +546,23 @@ justify-content: center;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.potf:hover {
+  transform: translateY(0%);
+}
+
+.container-foot {
+  display: flex;
+  align-items: baseline,
+}
+
 .foot {
   padding: 100px 0;
   background: #2e2f42;
 }
-
+.logofoot-and-p {
+  margin-right: 120px;
+}
+.
 .footdescr {
   max-width: 264px;
   font-family: "Roboto", sans-serif;
@@ -562,6 +572,25 @@ justify-content: center;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+
+.socialmedia-paragraf {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.icon-list-footer{
+  display: flex;
+  gap: 16px;
+}
+
+.iconsocialfooter{
+  width: 40px;
+  height: 40px;
 }
 
 .logofoot {
