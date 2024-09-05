@@ -184,47 +184,62 @@ ul {
 .navigation {
   display: flex;
   gap: 40px;
-  color: #404bbf;
+  
 }
 
 
-.current { 
-color: #404bbf;
+.current {
+  position: relative;
+  color: #404bbf;
 }
 
 .current::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: 0;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
   width: 100%;
+  /* Підкреслення для активного посилання */
 }
 
 .studio {
-  position: relative;
-  padding: 24px 0;
-  font-family: "Roboto", sans-serif;
-  color: #2e2f42;
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      padding: 24px 0;
+      font-family: "Roboto", sans-serif;
+      color: #2e2f42;
+      font-weight: 500;
+      font-size: 16px;
+      text-decoration: none;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+.studio::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: transparent;
+  /* Підкреслення відсутнє за замовчуванням */
+  border-radius: 2px;
+  width: 0;
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms;
 }
 
-.current:hover::after {
-color: #404bbf;
+.studio:hover::after {
+  width: 100%;
+  background-color: #404bbf;
+  /* Підкреслення з'являється на ховер */
 }
 
 .studio:hover {
   color: #404bbf;}
-
-
-  
 
 .studio:focus {
   color: #404bbf; 
