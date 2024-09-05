@@ -212,7 +212,6 @@ ul {
   color: #404bbf;
 }
 
-
 .studio:focus {
   color: #404bbf;
 }
@@ -337,8 +336,6 @@ ul {
   background: #f4f4fd;
 }
 
-
-
 .firstelement {
   width: calc((100% - 72px) / 4);
 }
@@ -441,12 +438,13 @@ ul {
 
 .insta {
   display: flex;
-width: 100%;
-height: 100%;
-background-color: #4d5ae5;
-border-radius: 50%;
-align-items: center;
-justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .insta:hover {
@@ -457,8 +455,9 @@ justify-content: center;
   background-color: #404bbf;
 }
 
+
 .iconstyle {
- fill: #f4f4fd; 
+  fill: #f4f4fd;
 }
 
 .portfolio {
@@ -477,10 +476,8 @@ justify-content: center;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfimage:hover {
-  box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-   
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .potfname {
   padding: 32px 16px;
@@ -511,7 +508,6 @@ justify-content: center;
   line-height: 120%;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  
 }
 
 .spec {
@@ -525,26 +521,24 @@ justify-content: center;
   transform: translateY(0%);
 }
 
-
-
 .appimage {
   position: relative;
   overflow: hidden;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    padding: 40px 32px;
-    background-color: #4d5ae5;
-    height: 100%;
-    width: 100%;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfimage:hover .overlay {
@@ -555,8 +549,8 @@ justify-content: center;
   display: flex;
   align-items: baseline;
   width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .foot {
@@ -583,16 +577,16 @@ justify-content: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 16px;
 }
 
-.icon-list-footer{
+.icon-list-footer {
   display: flex;
   gap: 16px;
 }
 
-.iconsocialfooter{
+.iconsocialfooter {
   width: 40px;
   height: 40px;
 }
@@ -623,4 +617,22 @@ justify-content: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+}
+
+.instafooter {
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.instafooter:hover {
+  background-color: #31d0aa;
+}
+.instafooter:focus {
+  background-color: #31d0aa;
 }
