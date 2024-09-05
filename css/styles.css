@@ -154,6 +154,8 @@ ul {
 }
 
 .logo {
+  position: relative;
+  padding: 24px 0;
   display: inline-block;
 
   margin-right: 76px;
@@ -184,23 +186,24 @@ ul {
   gap: 40px;
 }
 
-.current {
-  color: #404bbf;
-  position: relative;
+
+.current { 
+color: #404bbf;
 }
 
 .current::after {
   content: "";
   width: 100%;
+  position: absolute;
   left: 0;
   bottom: -1px;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
-  position: relative;
 }
 
 .studio {
+  position: relative;
   padding: 24px 0;
   font-family: "Roboto", sans-serif;
   color: #2e2f42;
@@ -209,15 +212,18 @@ ul {
   text-decoration: none;
   line-height: 150%;
   letter-spacing: 0.02em;
-  position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.studio:hover {
+  color: #404bbf;}
+
 .studio:hover::after {
   position: absolute;
 }
-.studio:hover {
-  color: #404bbf;
-}
+
+
+  
 
 .studio:focus {
   color: #404bbf;
