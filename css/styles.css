@@ -184,6 +184,7 @@ ul {
 .navigation {
   display: flex;
   gap: 40px;
+  color: #404bbf;
 }
 
 
