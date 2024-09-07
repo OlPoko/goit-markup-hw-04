@@ -188,7 +188,7 @@ ul {
 
 .current {
   color: #404bbf;
-  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current::after {
@@ -200,23 +200,25 @@ ul {
   background-color: #404bbf;
   border-radius: 2px;
   width: 100%;
-  /* Підкреслення для активного посилання */
 }
 
 .studio {
-  position: relative;
   padding: 24px 0;
   font-family: "Roboto", sans-serif;
-  color: #404bbf;
+  color: #2e2f42;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
   line-height: 150%;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
-.studio::after {
+.studio:hover {
+  color: #404bbf;
+}
+
+.studio:hover::after {
   content: "";
   position: absolute;
   left: 0;
@@ -225,21 +227,14 @@ ul {
   background-color: #404bbf;
   border-radius: 2px;
   width: 100%;
-  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms;
-}
-
-.studio:hover::after {
-  width: 100%;
-  background-color: #404bbf;
-}
-
-.studio:hover {
-  color: #404bbf;
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio:focus {
   color: #404bbf;
 }
+
+
 
 .contact {
   font-family: "Roboto", sans-serif;
@@ -268,6 +263,7 @@ ul {
 }
 
 .section-main {
+  margin: 0 auto;
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -451,6 +447,7 @@ ul {
 }
 
 .icon-list {
+  padding-top: 8px;
   display: flex;
   justify-content: center;
   gap: 24px;
