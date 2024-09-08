@@ -187,12 +187,12 @@ ul {
 }
 
 /* Активне посилання */
-.current {
+.current a {
   color: #404bbf;
   position: relative;
 }
 
-.current::after {
+.current a::after {
   content: "";
   position: absolute;
   left: 0;
